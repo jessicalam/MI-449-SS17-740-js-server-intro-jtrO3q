@@ -17,7 +17,7 @@ var server = http.createServer(function (request, response) {
     }
     response.end('<p>Return to the homepage <a href="/">here</a>!</p>')
   } else if (request.url === '/cuteness') {
-    response.write('<img src="cuteness.jpg" alt="cute animal">')
+    response.write('<img src="https://static.pexels.com/photos/8482/animal-dog-pet-indoors.jpg" alt="cute animal">')
     response.end('<p>Return to the homepage <a href="/">here</a>!</p>')
   } else {
     response.write('<h1>ERROR 404</h1><h3>The requested URL ' + request.url + ' could not be found!</h3p>')
